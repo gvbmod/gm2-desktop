@@ -1,0 +1,30 @@
+{
+  "name": "gm2-desktop",
+  "productName": "Gvbvdxx Mod 2",
+  "version": "1.0.0",
+  "description": "Gvbvdxx mod 2 desktop.",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "electron . --devmode",
+    "build": "electron-builder --ia32"
+  },
+  "author": "Gvbvdxx",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.2.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2"
+  },
+  "build": {
+    "appId": "gvbvdxx.scratch.mod.2.desktop.1.5.app",
+    "fileAssociations": [],
+    "nsis": {
+      "perMachine": false,
+      "oneClick": false,
+      "installerSidebar": "./installer/banner.bmp",
+      "uninstallerSidebar": "./installer/banner.bmp"
+    }
+  }
+}
